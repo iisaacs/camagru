@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(70, 90, 119);
+}
+
+.main {
+    background-color: rgb(2, 7, 59);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 2fr 1fr 0.5fr;
+    grid-template-areas:
+    "header header header"
+    ". . ."
+    ". options ."
+    " . . ."
+    "footer footer footer";
+}
+
+.header {
+    background-color: rgb(47, 106, 148);
+    grid-area: header;
+    margin: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "logo out gallery sign reg";
+}
+
+.logo_div {
+    grid-area: logo;
+    height: 200px;
+    width: 200px;
+}
+
+.gallery {
+    grid-area: gallery;
+    background-color: rgb(102, 213, 216);
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 30px;
+    padding-top: 25px;
+}
+
+.gallery:hover {
+    background-color: rgb(82, 193, 176);
+}
+
+.sign {
+    grid-area: sign;
+    background-color: rgb(102, 213, 216);
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    padding-top: 25px;
+}
+
+.sign:hover {
+    background-color: rgb(82, 193, 176);
+}
+
+.register {
+    grid-area: reg;
+    background-color: rgb(102, 213, 216);
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    padding-top: 25px;
+}
+
+.register:hover {
+    background-color: rgb(82, 193, 176);
+}
+
+.logout {
+    grid-area: sign;
+    background-color: rgb(102, 213, 216);
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    padding-top: 25px;
+}
+
+.logout:hover {
+    background-color: rgb(82, 193, 176);
+}
+
+.message {
+    grid-area: options;
+    background-color: rgb(2, 7, 59);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 50px;
+    margin: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer > pre {
+    color: white;
+    float: right;
+}
+
+.footer > hr {
+    border-top: 1px solid white
+}
+
+.profile {
+    grid-area: reg;
+    background-color: rgb(102, 213, 216);
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 30px;
+    padding-top: 25px;
+}
+
+.profile:hover {
+    background-color: rgb(82, 193, 176);
+}
+
+.log-out {
+    grid-area: sign;
+    background-color: rgb(102, 213, 216);
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    padding-top: 25px;
+}
+
+.log-out:hover {
+    background-color: rgb(82, 193, 176);
+}

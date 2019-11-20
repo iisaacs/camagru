@@ -1,0 +1,53 @@
+
+/* register page style */
+.reg_form {
+    display: grid;
+    grid-area: options;
+    grid-template-columns: [name] 1fr [inputs] 3fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+    background: rgb(66, 119, 182);
+    margin-right: 60px;
+    margin-left: 60px;
+    border-radius: 10px;
+  }
+
+  .reg_form > label  {
+    margin: 10px;
+    text-align: center;
+    grid-column: name;
+    padding-top: 20px;
+  }
+
+  .confirm {
+    background-color: rgb(40, 80, 140);
+  }
+
+  .reg_form > input{
+    grid-column: inputs;
+    padding: 12px 20px;
+    margin: 8px;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    height: 40px;
+  }
+
+  .reg_form > button{
+    background-color: rgb(40, 60, 130);
+    grid-column: inputs;
+    width: 350px;
+    height: 50px;
+  }
+
+  .reg_form > button:hover {
+    background-color: rgb(60, 70, 160);
+  }
+
+  .error {
+    color: rgb(190, 0, 0);
+    grid-column: inputs;
+    padding-top: 17px;
+
+
+  }

@@ -1,0 +1,73 @@
+.main {
+    background-color: rgb(2, 7, 59);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 2.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+    "header header header"
+    ". . ."
+    ". pictures ."
+    " . butts ."
+    "footer footer footer";
+}
+
+.upload {
+    grid-area: gallery;
+    background-color: rgb(102, 213, 216);
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    padding-top: 15px;
+}
+
+.upload:hover {
+    background-color: rgb(82, 193, 176);
+} 
+
+.gall {
+    grid-area: pictures;
+    border-radius: 10px;
+}
+
+.pic {
+    width: 32%;
+    height: 48%;
+    border: 3px solid blue;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.pic:hover {
+    border: 3px solid rgb(106, 168, 240);
+}
+
+.prev {
+    grid-area: butts;
+    background-color: rgb(47, 106, 148);
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 30%;
+    height: 70%;
+}
+
+.prev:hover {
+    background-color: rgb(87, 136, 178);
+}
+
+.next {
+    grid-area: butts;
+    background-color: rgb(47, 106, 148);
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 30%;
+    height: 70%;
+    margin-left: 70%;
+}
+
+.next:hover {
+    background-color: rgb(87, 136, 178);
+}
